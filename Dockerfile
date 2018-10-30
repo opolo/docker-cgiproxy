@@ -92,4 +92,4 @@ RUN     apt-get clean ; rm -rf /tmp/* /var/tmp/* ; rm -rf /var/lib/apt/lists/* ;
 WORKDIR /opt/cgiproxy
 
 #Start
-CMD	["/bin/bash", "-c", "service mysql start; sudo -u www-data ./nph-proxy.cgi start-server"]
+CMD	["/bin/bash", "-c", "service mysql start; sudo -u www-data ./nph-proxy.cgi start-fcgi"]
